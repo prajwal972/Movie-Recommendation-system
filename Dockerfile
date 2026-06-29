@@ -27,7 +27,7 @@ WORKDIR /workspace/app
 
 EXPOSE 8501
 
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health || exit 1
+HEALTHCHECK CMD curl --fail http://localhost:${PORT}/_stcore/health || exit 1
 
 ENV PORT=8501
 
