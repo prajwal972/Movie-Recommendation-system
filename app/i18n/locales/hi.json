@@ -1,0 +1,86 @@
+{
+  "app": {
+    "name": "CineMatch AI",
+    "tagline": "आपकी पसंद की फ़िल्में।"
+  },
+  "nav": {
+    "home": "होम",
+    "recommendations": "सुझाव",
+    "analytics": "एनालिटिक्स",
+    "about": "परिचय",
+    "login": "लॉग इन",
+    "register": "साइन अप",
+    "settings": "सेटिंग्स",
+    "logout": "लॉग आउट"
+  },
+  "common": {
+    "search_placeholder": "फ़िल्म खोजें...",
+    "view_details": "विवरण देखें",
+    "recommend_similar": "समान फ़िल्में सुझाएं",
+    "add_to_favorites": "फ़ेवरेट में जोड़ें",
+    "remove_from_favorites": "फ़ेवरेट से हटाएं",
+    "add_to_watchlist": "वॉचलिस्ट में जोड़ें",
+    "remove_from_watchlist": "वॉचलिस्ट से हटाएं",
+    "loading": "लोड हो रहा है...",
+    "error": "कुछ गलत हो गया",
+    "success": "सफल",
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "submit": "सबमिट करें",
+    "back": "वापस",
+    "sign_in_to_continue": "इसे अपने खाते में सहेजने के लिए लॉग इन करें।",
+    "showing_results_for": "{title} के लिए परिणाम दिखाए जा रहे हैं"
+  },
+  "home": {
+    "hero_title": "अपनी पसंदीदा फ़िल्म खोजें।",
+    "hero_subtitle": "हमें एक फ़िल्म बताएं जो आपको पसंद है — हम बाकी ढूंढ लेंगे।",
+    "featured": "विशेष",
+    "trending_today": "आज ट्रेंडिंग",
+    "top_rated": "सर्वश्रेष्ठ रेटेड",
+    "recently_released": "हाल ही में रिलीज़",
+    "browse_by_genre": "जॉनर के अनुसार ब्राउज़ करें",
+    "your_recent_searches": "आपकी हाल की खोजें",
+    "no_searches_yet": "अभी तक कोई खोज नहीं — कोई पसंदीदा फ़िल्म खोजें।"
+  },
+  "auth": {
+    "login_title": "वापसी पर स्वागत है",
+    "login_subtitle": "जहां से छोड़ा था वहां से जारी रखने के लिए लॉग इन करें।",
+    "register_title": "अपना खाता बनाएं",
+    "register_subtitle": "फ़ेवरेट सहेजने और व्यक्तिगत सुझाव पाने के लिए CineMatch AI से जुड़ें।",
+    "username": "उपयोगकर्ता नाम",
+    "email": "ईमेल",
+    "phone_number": "फ़ोन नंबर",
+    "password": "पासवर्ड",
+    "confirm_password": "पासवर्ड की पुष्टि करें",
+    "login_button": "लॉग इन करें",
+    "register_button": "खाता बनाएं",
+    "no_account": "खाता नहीं है?",
+    "have_account": "पहले से खाता है?",
+    "create_account_link": "साइन अप करें",
+    "login_link": "लॉग इन करें",
+    "continue_as_guest": "गेस्ट के रूप में जारी रखें",
+    "welcome_back_user": "वापसी पर स्वागत है, {username}।",
+    "account_created": "खाता बन गया। CineMatch AI में आपका स्वागत है।"
+  },
+  "settings": {
+    "title": "सेटिंग्स",
+    "language": "भाषा",
+    "profile": "प्रोफ़ाइल",
+    "account_created": "सदस्य बने",
+    "preferred_genres": "पसंदीदा जॉनर",
+    "save_changes": "बदलाव सहेजें",
+    "changes_saved": "बदलाव सहेज लिए गए।",
+    "logout_confirm": "CineMatch AI से लॉग आउट करें?"
+  },
+  "movie_card": {
+    "rating": "रेटिंग",
+    "runtime": "अवधि",
+    "year": "वर्ष",
+    "match_score": "मैच"
+  },
+  "about": {
+    "title": "CineMatch AI के बारे में",
+    "body": "CineMatch AI आपको वो फ़िल्में खोजने में मदद करता है जो आपको वाकई पसंद आएंगी — शुरू करने के लिए रेटिंग इतिहास की ज़रूरत नहीं।",
+    "contact": "संपर्क करें"
+  }
+}

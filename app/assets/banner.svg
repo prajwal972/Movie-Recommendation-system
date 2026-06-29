@@ -1,0 +1,61 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11141D"/>
+      <stop offset="100%" stop-color="#0B0E14"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="85%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="8%" cy="90%" r="45%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="280" fill="url(#bg)"/>
+  <rect width="1200" height="280" fill="url(#glow)"/>
+  <rect width="1200" height="280" fill="url(#glow2)"/>
+
+  <!-- orbit / similarity-graph motif -->
+  <g stroke="#262B38" stroke-width="1.4" opacity="0.9">
+    <line x1="870" y1="70" x2="960" y2="50"/>
+    <line x1="960" y1="50" x2="1040" y2="90"/>
+    <line x1="870" y1="70" x2="940" y2="130"/>
+    <line x1="940" y1="130" x2="1040" y2="90"/>
+    <line x1="940" y1="130" x2="1010" y2="190"/>
+    <line x1="1040" y1="90" x2="1110" y2="140"/>
+    <line x1="80" y1="220" x2="150" y2="190"/>
+    <line x1="150" y1="190" x2="140" y2="240"/>
+    <line x1="80" y1="220" x2="40" y2="170"/>
+  </g>
+  <g fill="#8B5CF6">
+    <circle cx="870" cy="70" r="4.5"/>
+    <circle cx="960" cy="50" r="3.5"/>
+    <circle cx="1040" cy="90" r="5"/>
+    <circle cx="940" cy="130" r="4"/>
+    <circle cx="1010" cy="190" r="3.5"/>
+    <circle cx="1110" cy="140" r="4.5"/>
+  </g>
+  <g fill="#22D3EE">
+    <circle cx="80" cy="220" r="4"/>
+    <circle cx="150" cy="190" r="3.5"/>
+    <circle cx="140" cy="240" r="3"/>
+    <circle cx="40" cy="170" r="3.5"/>
+  </g>
+
+  <text x="90" y="128" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#22D3EE"
+        letter-spacing="4" font-weight="600">CONTENT-BASED MOVIE RECOMMENDER</text>
+
+  <text x="86" y="195" font-family="Helvetica, Arial, sans-serif" font-size="64" font-weight="700"
+        fill="url(#textGrad)">🎬 CineMatch AI</text>
+
+  <text x="90" y="232" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#9AA1B1">
+    NLP + Cosine Similarity · 4,799 Movies · CountVectorizer · Streamlit
+  </text>
+</svg>

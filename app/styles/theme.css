@@ -1,0 +1,402 @@
+/* =====================================================================
+   CineMatch AI — dark / glassmorphism theme
+   Palette: deep indigo-black base, violet -> cyan signature gradient.
+   Signature element: the "orbit" motif (small linked nodes) echoes the
+   cosine-similarity graph at the heart of the recommender, reused across
+   the hero, KPI cards, and section dividers for a consistent identity.
+   ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --bg: #0B0E14;
+    --surface: #151821;
+    --surface-alt: #1B1F2A;
+    --border: #262B38;
+    --text: #E7E9EE;
+    --text-muted: #9AA1B1;
+    --violet: #8B5CF6;
+    --cyan: #22D3EE;
+    --amber: #FBBF24;
+    --rose: #FB7185;
+    --gradient: linear-gradient(135deg, #8B5CF6 0%, #22D3EE 100%);
+}
+
+/* ---- Global ---------------------------------------------------- */
+.stApp {
+    background: radial-gradient(circle at 15% 0%, #161B2B 0%, #0B0E14 55%) fixed;
+    color: var(--text);
+}
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .cm-display {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.01em;
+}
+
+#MainMenu, footer, header { visibility: hidden; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: var(--surface-alt); border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* ---- Hero -------------------------------------------------------- */
+.cm-hero {
+    position: relative;
+    padding: 2.6rem 2.2rem;
+    border-radius: 20px;
+    background: linear-gradient(160deg, #171B29 0%, #11141D 100%);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    margin-bottom: 1.6rem;
+}
+
+.cm-hero::before {
+    content: "";
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 280px; height: 280px;
+    background: var(--gradient);
+    opacity: 0.18;
+    filter: blur(40px);
+    border-radius: 50%;
+}
+
+.cm-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 0.6rem;
+}
+
+.cm-hero-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.15;
+}
+
+.cm-hero-sub {
+    color: var(--text-muted);
+    font-size: 1.02rem;
+    max-width: 640px;
+    line-height: 1.55;
+}
+
+/* ---- KPI cards ---------------------------------------------------- */
+.cm-kpi {
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.1rem 1.3rem;
+    backdrop-filter: blur(6px);
+    transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.cm-kpi:hover {
+    transform: translateY(-3px);
+    border-color: var(--violet);
+}
+
+.cm-kpi-value {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.cm-kpi-label {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 2px;
+}
+
+/* ---- Glass section / card ---------------------------------------- */
+.cm-card {
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1rem 1.1rem;
+    backdrop-filter: blur(6px);
+    height: 100%;
+    transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.cm-card:hover {
+    border-color: var(--cyan);
+    transform: translateY(-2px);
+}
+
+.cm-section-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 1.6rem 0 0.8rem 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cm-section-title::before {
+    content: "";
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--gradient);
+    display: inline-block;
+}
+
+/* ---- Recommendation result card ---------------------------------- */
+.cm-result-title {
+    font-weight: 600;
+    font-size: 1.0rem;
+    color: var(--text);
+    margin-bottom: 2px;
+    line-height: 1.3;
+}
+
+.cm-result-meta {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+}
+
+.cm-badge {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: rgba(139, 92, 246, 0.16);
+    color: var(--violet);
+    border: 1px solid rgba(139, 92, 246, 0.35);
+    margin-top: 6px;
+}
+
+.cm-badge.cyan { background: rgba(34, 211, 238, 0.14); color: var(--cyan); border-color: rgba(34,211,238,.35); }
+.cm-badge.amber { background: rgba(251, 191, 36, 0.14); color: var(--amber); border-color: rgba(251,191,36,.35); }
+
+/* ---- Sidebar ------------------------------------------------------ */
+section[data-testid="stSidebar"] {
+    background: #0E1119;
+    border-right: 1px solid var(--border);
+}
+
+.sidebar-brand { display: flex; align-items: center; gap: 10px; padding: 4px 0 2px 0; }
+.sidebar-logo { font-size: 1.7rem; }
+.sidebar-title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.05rem; }
+.sidebar-subtitle { color: var(--text-muted); font-size: 0.74rem; }
+
+/* ---- Buttons ------------------------------------------------------ */
+.stButton > button {
+    background: var(--gradient);
+    color: #0B0E14;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 0.5rem 1.1rem;
+    transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.stButton > button:hover {
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+}
+
+/* ---- Empty / error state ------------------------------------------ */
+.cm-empty {
+    border: 1px dashed var(--border);
+    border-radius: 14px;
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* =====================================================================
+   Phase 2 additions — movie cards, auth forms, icon buttons,
+   accessibility, motion.
+   ===================================================================== */
+
+/* ---- Accessibility / motion -------------------------------------- */
+*:focus-visible {
+    outline: 2px solid var(--cyan);
+    outline-offset: 2px;
+    border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+}
+
+@keyframes cm-fade-in {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.cm-fade-in { animation: cm-fade-in 0.35s ease both; }
+
+/* ---- Movie card ----------------------------------------------------- */
+.cm-movie-card {
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+    height: 100%;
+}
+
+.cm-movie-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--violet);
+    box-shadow: 0 14px 32px -16px rgba(139, 92, 246, 0.45);
+}
+
+.cm-movie-card-body {
+    padding: 0.85rem 0.95rem 1rem 0.95rem;
+}
+
+.cm-movie-title {
+    font-weight: 600;
+    font-size: 0.98rem;
+    line-height: 1.3;
+    margin-bottom: 2px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cm-movie-meta {
+    color: var(--text-muted);
+    font-size: 0.76rem;
+    margin-bottom: 0.5rem;
+}
+
+.cm-movie-overview {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    line-height: 1.45;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0.6rem;
+}
+
+.cm-genre-chip {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    background: var(--surface-alt);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    margin: 0 4px 4px 0;
+}
+
+/* ---- Icon-only buttons (favorite / watchlist toggles, no emoji) ----- */
+.cm-icon-btn > button {
+    background: rgba(255, 255, 255, 0.04) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
+    font-weight: 500 !important;
+    padding: 0.35rem 0.7rem !important;
+}
+
+.cm-icon-btn > button:hover {
+    border-color: var(--violet) !important;
+    color: var(--violet) !important;
+    filter: none !important;
+    transform: none !important;
+}
+
+.cm-icon-btn.active > button {
+    background: rgba(139, 92, 246, 0.16) !important;
+    border-color: var(--violet) !important;
+    color: var(--violet) !important;
+}
+
+/* ---- Secondary / outline button variant ---------------------------- */
+.cm-btn-outline > button {
+    background: transparent !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.cm-btn-outline > button:hover {
+    border-color: var(--cyan) !important;
+    color: var(--cyan) !important;
+}
+
+/* ---- Auth forms (Login / Register) ---------------------------------- */
+.cm-auth-wrapper {
+    max-width: 420px;
+    margin: 1.5rem auto;
+}
+
+.cm-auth-card {
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem 2rem 1.6rem 2rem;
+    backdrop-filter: blur(8px);
+}
+
+.cm-auth-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.cm-auth-subtitle {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    margin-bottom: 1.3rem;
+}
+
+.cm-auth-switch {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.86rem;
+    margin-top: 1rem;
+}
+
+div[data-testid="stTextInput"] input,
+div[data-testid="stTextInputRootElement"] input {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+    border-radius: 10px !important;
+}
+
+div[data-testid="stTextInput"] input:focus {
+    border-color: var(--violet) !important;
+}
+
+/* ---- Avatar ---------------------------------------------------------- */
+.cm-avatar {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: var(--gradient);
+    color: #0B0E14;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.cm-user-row {
+    display: flex; align-items: center; gap: 10px;
+}

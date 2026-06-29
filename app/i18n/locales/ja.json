@@ -1,0 +1,86 @@
+{
+  "app": {
+    "name": "CineMatch AI",
+    "tagline": "あなたの好みに合う映画を。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "recommendations": "おすすめ",
+    "analytics": "分析",
+    "about": "概要",
+    "login": "ログイン",
+    "register": "新規登録",
+    "settings": "設定",
+    "logout": "ログアウト"
+  },
+  "common": {
+    "search_placeholder": "映画を検索...",
+    "view_details": "詳細を見る",
+    "recommend_similar": "似た映画をおすすめ",
+    "add_to_favorites": "お気に入りに追加",
+    "remove_from_favorites": "お気に入りから削除",
+    "add_to_watchlist": "ウォッチリストに追加",
+    "remove_from_watchlist": "ウォッチリストから削除",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "submit": "送信",
+    "back": "戻る",
+    "sign_in_to_continue": "アカウントに保存するにはログインしてください。",
+    "showing_results_for": "{title} の結果を表示中"
+  },
+  "home": {
+    "hero_title": "次に観る映画を見つけよう。",
+    "hero_subtitle": "好きな映画を1つ教えてください — 残りはこちらで見つけます。",
+    "featured": "注目作品",
+    "trending_today": "今日の急上昇",
+    "top_rated": "高評価",
+    "recently_released": "最近公開",
+    "browse_by_genre": "ジャンルで探す",
+    "your_recent_searches": "最近の検索",
+    "no_searches_yet": "検索履歴はまだありません — 好きな映画を検索してみてください。"
+  },
+  "auth": {
+    "login_title": "おかえりなさい",
+    "login_subtitle": "続きを利用するにはログインしてください。",
+    "register_title": "アカウントを作成",
+    "register_subtitle": "お気に入りを保存し、パーソナライズされたおすすめを受け取るには CineMatch AI に登録してください。",
+    "username": "ユーザー名",
+    "email": "メールアドレス",
+    "phone_number": "電話番号",
+    "password": "パスワード",
+    "confirm_password": "パスワードの確認",
+    "login_button": "ログイン",
+    "register_button": "アカウントを作成",
+    "no_account": "アカウントをお持ちでないですか?",
+    "have_account": "すでにアカウントをお持ちですか?",
+    "create_account_link": "新規登録",
+    "login_link": "ログイン",
+    "continue_as_guest": "ゲストとして続ける",
+    "welcome_back_user": "おかえりなさい、{username} さん。",
+    "account_created": "アカウントが作成されました。CineMatch AI へようこそ。"
+  },
+  "settings": {
+    "title": "設定",
+    "language": "言語",
+    "profile": "プロフィール",
+    "account_created": "登録日",
+    "preferred_genres": "好きなジャンル",
+    "save_changes": "変更を保存",
+    "changes_saved": "変更を保存しました。",
+    "logout_confirm": "CineMatch AI からログアウトしますか?"
+  },
+  "movie_card": {
+    "rating": "評価",
+    "runtime": "上映時間",
+    "year": "公開年",
+    "match_score": "マッチ度"
+  },
+  "about": {
+    "title": "CineMatch AI について",
+    "body": "CineMatch AI は、好きな映画から本当に気に入る映画を見つけるお手伝いをします。評価履歴がなくても始められます。",
+    "contact": "お問い合わせ"
+  }
+}

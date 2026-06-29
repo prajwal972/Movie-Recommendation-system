@@ -1,0 +1,86 @@
+{
+  "app": {
+    "name": "CineMatch AI",
+    "tagline": "Movies, matched to your taste."
+  },
+  "nav": {
+    "home": "Home",
+    "recommendations": "Recommendations",
+    "analytics": "Analytics",
+    "about": "About",
+    "login": "Log In",
+    "register": "Sign Up",
+    "settings": "Settings",
+    "logout": "Log Out"
+  },
+  "common": {
+    "search_placeholder": "Search for a movie...",
+    "view_details": "View Details",
+    "recommend_similar": "Recommend Similar",
+    "add_to_favorites": "Add to Favorites",
+    "remove_from_favorites": "Remove from Favorites",
+    "add_to_watchlist": "Add to Watchlist",
+    "remove_from_watchlist": "Remove from Watchlist",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "submit": "Submit",
+    "back": "Back",
+    "sign_in_to_continue": "Sign in to save this to your account.",
+    "showing_results_for": "Showing results for {title}"
+  },
+  "home": {
+    "hero_title": "Find your next favorite movie.",
+    "hero_subtitle": "Tell us one movie you love — we'll find the rest.",
+    "featured": "Featured",
+    "trending_today": "Trending Today",
+    "top_rated": "Top Rated",
+    "recently_released": "Recently Released",
+    "browse_by_genre": "Browse by Genre",
+    "your_recent_searches": "Your Recent Searches",
+    "no_searches_yet": "No searches yet — try looking up a movie you love."
+  },
+  "auth": {
+    "login_title": "Welcome back",
+    "login_subtitle": "Log in to pick up where you left off.",
+    "register_title": "Create your account",
+    "register_subtitle": "Join CineMatch AI to save favorites and get personalized picks.",
+    "username": "Username",
+    "email": "Email",
+    "phone_number": "Phone Number",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "login_button": "Log In",
+    "register_button": "Create Account",
+    "no_account": "Don't have an account?",
+    "have_account": "Already have an account?",
+    "create_account_link": "Sign up",
+    "login_link": "Log in",
+    "continue_as_guest": "Continue as Guest",
+    "welcome_back_user": "Welcome back, {username}.",
+    "account_created": "Account created. Welcome to CineMatch AI."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "profile": "Profile",
+    "account_created": "Member since",
+    "preferred_genres": "Preferred Genres",
+    "save_changes": "Save Changes",
+    "changes_saved": "Changes saved.",
+    "logout_confirm": "Log out of CineMatch AI?"
+  },
+  "movie_card": {
+    "rating": "Rating",
+    "runtime": "Runtime",
+    "year": "Year",
+    "match_score": "Match"
+  },
+  "about": {
+    "title": "About CineMatch AI",
+    "body": "CineMatch AI helps you find movies you'll actually like, based on what you already enjoy — no ratings history required to get started.",
+    "contact": "Contact"
+  }
+}

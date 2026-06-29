@@ -1,0 +1,49 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+*.egg-info/
+
+# Python cache
+*.pyd
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Build
+build/
+dist/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Raw source CSVs (40MB+ — re-downloadable, see README "Dataset" section).
+# Processed data, the trained model artifacts (models/*.pkl), and the
+# notebooks themselves ARE tracked, so the app runs immediately after clone.
+data/movies.csv
+data/credits.csv
+
+# Runtime SQLite database (user accounts, favorites, watchlist, history) —
+# created automatically on first run, never committed.
+database/*.db
+database/*.db-journal
+
+# Logs
+*.log
